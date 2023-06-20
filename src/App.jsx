@@ -1,14 +1,15 @@
-// import { useState } from 'react'
 import { Flex, Box } from 'theme-ui'
 import Header from './Header'
-import Main from './Home'
+import HomeSection from './HomeSection'
+import FeatureSection from './FeatureSection'
 
 const App = () => {
   return (
     <Flex sx={{ width: '100%', justifyContent: 'center' }}>
       <Box sx={{ width: '1080px' }}>
         <Header />
-        <Main />
+        <HomeSection />
+        <FeatureSection />
       </Box>
     </Flex>
   )

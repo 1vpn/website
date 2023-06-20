@@ -9,14 +9,14 @@ const HeaderMenu = () => {
         alignItems: 'center',
       }}
     >
-      <Link href="#About" variant="header">
-        About
+      <Link href="#home" variant="header">
+        Home
       </Link>
-      <Link href="#Features" variant="header">
+      <Link href="#features" variant="header">
         Features
       </Link>
       <Link href="#About" variant="header">
-        GitHub
+        Reviews
       </Link>
       <Link href="'https://google.com" variant="header">
         Contact

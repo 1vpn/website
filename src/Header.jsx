@@ -8,7 +8,6 @@ const Header = () => {
       sx={{
         height: '48px',
         my: '40px',
-        bg: '',
         alignItems: 'center',
         justifyContent: 'space-between',
       }}

@@ -5,9 +5,10 @@ import chrome from './assets/chrome.svg'
 import firefox from './assets/firefox.svg'
 import edge from './assets/edge.svg'
 
-const Home = () => {
+const HomeSection = () => {
   return (
     <Flex
+      id="home"
       sx={{
         width: '100%',
         bg: 'lightBlue',
@@ -21,7 +22,7 @@ const Home = () => {
       <Heading as="h1" sx={{ all: 'unset', fontSize: '45px', mb: '32px' }}>
         Free, Secure, and Private Browsing
       </Heading>
-      <Flex sx={{ gap: '32px', mb: '40px' }}>
+      <Flex sx={{ gap: '32px', mb: '50px' }}>
         <HomeButton
           browserName={'Chrome'}
           logo={chrome}
@@ -44,17 +45,9 @@ const Home = () => {
           }
         />
       </Flex>
-      <Image
-        src={map}
-        alt="World map"
-        sx={
-          {
-            // height: '32px',
-          }
-        }
-      />
+      <Image src={map} alt="World map" />
     </Flex>
   )
 }
 
-export default Home
+export default HomeSection
