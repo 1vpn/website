@@ -9,23 +9,26 @@ const HeaderMenu = () => {
         alignItems: 'center',
       }}
     >
-      <Link href="#home" variant="header">
+      <Link href="/" variant="header">
         Home
       </Link>
       <Link href="#features" variant="header">
         Features
       </Link>
-      <Link href="#About" variant="header">
-        Reviews
-      </Link>
-      <Link href="'https://google.com" variant="header">
+      <Link href="mailto:1vpncontact@proton.me" variant="header">
         Contact
       </Link>
       <Link
-        href="#download"
+        href={
+          navigator.userAgent.indexOf('Firefox') !== -1
+            ? 'https://addons.mozilla.org/en-US/firefox/addon/1vpn-free-vpn-for-firefox/'
+            : navigator.userAgent.indexOf('Edg') !== -1
+            ? 'https://microsoftedge.microsoft.com/addons/detail/dalhgafbhpdolibignjckpmiejgfddjp'
+            : 'https://chrome.google.com/webstore/detail/akcocjjpkmlniicdeemdceeajlmoabhg'
+        }
         target="_blank"
         variant="button"
-        sx={{ width: '124px' }}
+        sx={{ width: '132px' }}
       >
         Download
       </Link>

@@ -2,16 +2,20 @@ import { Flex, Box } from 'theme-ui'
 import Header from './Header'
 import HomeSection from './HomeSection'
 import FeatureSection from './FeatureSection'
+import Footer from './Footer'
 
 const App = () => {
   return (
-    <Flex sx={{ width: '100%', justifyContent: 'center' }}>
-      <Box sx={{ width: '1080px' }}>
-        <Header />
-        <HomeSection />
-        <FeatureSection />
-      </Box>
-    </Flex>
+    <>
+      <Flex sx={{ width: '100%', justifyContent: 'center' }}>
+        <Box sx={{ width: '1080px' }}>
+          <Header />
+          <HomeSection />
+          <FeatureSection />
+        </Box>
+      </Flex>
+      <Footer />
+    </>
   )
 }
 

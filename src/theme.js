@@ -1,4 +1,5 @@
 export const theme = {
+  breakpoints: ['990px', '1200px'],
   fonts: {
     body: 'system-ui, sans-serif',
     heading: '"Avenir Next", sans-serif',

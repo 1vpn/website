@@ -6,7 +6,7 @@ const HomeButton = ({ browserName, logo, url }) => {
       href={url}
       target="_blank"
       variant="button"
-      sx={{ width: '240px', gap: '8px' }}
+      sx={{ width: '256px', gap: '8px' }}
     >
       <Image
         src={logo}

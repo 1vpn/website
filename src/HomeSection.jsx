@@ -8,7 +8,6 @@ import edge from './assets/edge.svg'
 const HomeSection = () => {
   return (
     <Flex
-      id="home"
       sx={{
         width: '100%',
         bg: 'lightBlue',
@@ -20,7 +19,7 @@ const HomeSection = () => {
       }}
     >
       <Heading as="h1" sx={{ all: 'unset', fontSize: '45px', mb: '32px' }}>
-        Free, Secure, and Private Browsing
+        Free, Secure, and Private VPN
       </Heading>
       <Flex sx={{ gap: '32px', mb: '50px' }}>
         <HomeButton
@@ -45,7 +44,14 @@ const HomeSection = () => {
           }
         />
       </Flex>
-      <Image src={map} alt="World map" />
+      <Image
+        src={map}
+        alt="World map"
+        sx={{
+          height: '532px',
+          width: '100%',
+        }}
+      />
     </Flex>
   )
 }
