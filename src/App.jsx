@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <Flex sx={{ width: '100%', justifyContent: 'center' }}>
-        <Box sx={{ width: '1080px' }}>
+        <Box sx={{ width: '1080px', mx: '52px' }}>
           <Header />
           <HomeSection />
           <FeatureSection />

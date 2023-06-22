@@ -1,4 +1,4 @@
-import { Flex, Heading, Image } from 'theme-ui'
+import { Flex, Heading, Image, Box } from 'theme-ui'
 import HomeButton from './HomeButton'
 import map from './assets/map.svg'
 import chrome from './assets/chrome.svg'
@@ -44,14 +44,27 @@ const HomeSection = () => {
           }
         />
       </Flex>
-      <Image
-        src={map}
-        alt="World map"
+      <Box
         sx={{
-          height: '532px',
+          position: 'relative',
           width: '100%',
+          height: 0,
+          paddingBottom: '58%',
         }}
-      />
+      >
+        <Image
+          src={map}
+          alt="World map"
+          sx={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          }}
+        />
+      </Box>
     </Flex>
   )
 }
