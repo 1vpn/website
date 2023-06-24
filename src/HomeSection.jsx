@@ -7,65 +7,89 @@ import edge from './assets/edge.svg'
 
 const HomeSection = () => {
   return (
-    <Flex
-      sx={{
-        width: '100%',
-        bg: 'lightBlue',
-        borderRadius: '24px',
-        px: '80px',
-        py: '40px',
-        flexDirection: 'column',
-        alignItems: 'center',
-      }}
-    >
-      <Heading as="h1" sx={{ all: 'unset', fontSize: '45px', mb: '32px' }}>
-        Free, Secure, and Private VPN
-      </Heading>
-      <Flex sx={{ gap: '32px', mb: '50px' }}>
-        <HomeButton
-          browserName={'Chrome'}
-          logo={chrome}
-          url={
-            'https://chrome.google.com/webstore/detail/akcocjjpkmlniicdeemdceeajlmoabhg'
-          }
-        />
-        <HomeButton
-          browserName={'Firefox'}
-          logo={firefox}
-          url={
-            'https://addons.mozilla.org/en-US/firefox/addon/1vpn-free-vpn-for-firefox/'
-          }
-        />
-        <HomeButton
-          browserName={'Edge'}
-          logo={edge}
-          url={
-            'https://microsoftedge.microsoft.com/addons/detail/dalhgafbhpdolibignjckpmiejgfddjp'
-          }
-        />
-      </Flex>
+    <Box sx={{ position: 'relative', zIndex: '1' }}>
       <Box
         sx={{
-          position: 'relative',
+          display: ['block', 'none', 'none', 'none'],
+          height: '30px',
+          bg: 'white',
+        }}
+      />
+      <Flex
+        sx={{
           width: '100%',
-          height: 0,
-          paddingBottom: '58%',
+          bg: 'paleBlue',
+          borderRadius: '24px',
+          px: ['16px', '40px', '40px', '80px'],
+          py: ['16px', '40px', '40px', '40px'],
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
-        <Image
-          src={map}
-          alt="World map"
+        <Heading
+          as="h1"
           sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
+            all: 'unset',
+            fontSize: ['35px', '45px'],
+            mb: ['24px', '24px', '32px', '32px'],
+            textAlign: 'center',
           }}
-        />
-      </Box>
-    </Flex>
+        >
+          Free, Secure, and Private VPN
+        </Heading>
+        <Flex
+          sx={{
+            gap: ['18px', '24px', '32px', '32px'],
+            mb: ['24px', '40px', '50px', '50px'],
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+          }}
+        >
+          <HomeButton
+            browserName={'Chrome'}
+            logo={chrome}
+            url={
+              'https://chrome.google.com/webstore/detail/akcocjjpkmlniicdeemdceeajlmoabhg'
+            }
+          />
+          <HomeButton
+            browserName={'Firefox'}
+            logo={firefox}
+            url={
+              'https://addons.mozilla.org/en-US/firefox/addon/1vpn-free-vpn-for-firefox/'
+            }
+          />
+          <HomeButton
+            browserName={'Edge'}
+            logo={edge}
+            url={
+              'https://microsoftedge.microsoft.com/addons/detail/dalhgafbhpdolibignjckpmiejgfddjp'
+            }
+          />
+        </Flex>
+        <Box
+          sx={{
+            position: 'relative',
+            width: '100%',
+            height: 0,
+            paddingBottom: '58%',
+          }}
+        >
+          <Image
+            src={map}
+            alt="World map"
+            sx={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+            }}
+          />
+        </Box>
+      </Flex>
+    </Box>
   )
 }
 

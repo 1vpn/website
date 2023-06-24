@@ -2,7 +2,13 @@ import { Flex, Heading, Image } from 'theme-ui'
 
 const FeatureItem = ({ title, image }) => {
   return (
-    <Flex sx={{ width: '33%', flexDirection: 'column', alignItems: 'center' }}>
+    <Flex
+      sx={{
+        width: ['100%', '50%', '33%', '33%'],
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <Image
         src={image}
         alt={title}
@@ -11,7 +17,10 @@ const FeatureItem = ({ title, image }) => {
           height: '100px',
         }}
       />
-      <Heading as="h3" sx={{ all: 'unset', fontSize: '24px', my: '16px' }}>
+      <Heading
+        as="h3"
+        sx={{ all: 'unset', fontSize: '24px', my: '16px', textAlign: 'center' }}
+      >
         {title}
       </Heading>
     </Flex>

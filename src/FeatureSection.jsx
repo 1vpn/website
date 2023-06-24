@@ -12,7 +12,8 @@ const FeatureSection = () => {
     <Box
       id="features"
       sx={{
-        mt: '144px',
+        mx: ['16px', 0, 0, 0],
+        mt: ['80px', '120px', '144px', '144px'],
       }}
     >
       <Heading as="h2" sx={{ all: 'unset', fontSize: '32px' }}>
@@ -23,7 +24,7 @@ const FeatureSection = () => {
           height: '8px',
           width: '72px',
           mt: '16px',
-          mb: '70px',
+          mb: ['50px', '60px', '70px', '70px'],
           bg: 'blue',
           borderRadius: '2px',
         }}
@@ -32,7 +33,7 @@ const FeatureSection = () => {
         sx={{
           flexWrap: 'wrap',
           justifyContent: 'space-between',
-          gap: '70px 0',
+          gap: ['50px 0', '60px 0', '70px 0', '70px 0'],
         }}
       >
         <FeatureItem title={'Lightning-Fast Speed'} image={fast} />

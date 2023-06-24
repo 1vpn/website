@@ -6,10 +6,13 @@ const Header = () => {
   return (
     <Flex
       sx={{
-        height: '48px',
-        my: '40px',
+        height: ['auto', '48px', '48px', '48px'],
+        mx: ['16px', 0, 0, 0],
+        mt: ['20px', '20px', '40px', '40px'],
+        mb: ['0', '30px', '40px', '40px'],
         alignItems: 'center',
         justifyContent: 'space-between',
+        flexWrap: 'wrap',
       }}
     >
       <Link

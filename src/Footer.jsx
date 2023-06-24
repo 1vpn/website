@@ -6,9 +6,9 @@ const Footer = () => {
       sx={{
         width: '100%',
         justifyContent: 'center',
-        bg: 'lightBlue',
+        bg: 'paleBlue',
         py: '40px',
-        mt: '100px',
+        mt: ['40px', '80px', '100px', '100px'],
       }}
     >
       <Box sx={{ width: '1080px', textAlign: 'center' }}>
