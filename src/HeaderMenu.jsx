@@ -43,7 +43,7 @@ const HeaderMenu = () => {
         <Link href="#features" variant="header">
           Features
         </Link>
-        <Link href="mailto:1vpncontact@proton.me" variant="header">
+        <Link href="mailto:contact@1vpn.org" variant="header">
           Contact
         </Link>
         <Link
