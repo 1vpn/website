@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+Sitemap: https://1vpn.org/sitemap.txt
+User-agent: *
+Disallow:
