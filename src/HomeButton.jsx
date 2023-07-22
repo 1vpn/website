@@ -16,7 +16,7 @@ const HomeButton = ({ browserName, logo, url }) => {
           height: '22px',
         }}
       />
-      Download for {browserName}
+      {`Download for ${browserName}`}
     </Link>
   )
 }

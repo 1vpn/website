@@ -32,6 +32,7 @@ const HomeSection = () => {
             all: 'unset',
             fontSize: ['35px', '45px'],
             mb: ['24px', '24px', '32px', '32px'],
+            height: ['auto', 'auto', '56px', '56px'],
             textAlign: 'center',
           }}
         >
@@ -53,17 +54,17 @@ const HomeSection = () => {
             }
           />
           <HomeButton
-            browserName={'Firefox'}
-            logo={firefox}
-            url={
-              'https://addons.mozilla.org/en-US/firefox/addon/1vpn-free-vpn-for-firefox/'
-            }
-          />
-          <HomeButton
             browserName={'Edge'}
             logo={edge}
             url={
               'https://microsoftedge.microsoft.com/addons/detail/dalhgafbhpdolibignjckpmiejgfddjp'
+            }
+          />
+          <HomeButton
+            browserName={'Firefox'}
+            logo={firefox}
+            url={
+              'https://addons.mozilla.org/en-US/firefox/addon/1vpn-free-vpn-for-firefox/'
             }
           />
         </Flex>
