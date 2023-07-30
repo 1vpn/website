@@ -37,11 +37,15 @@ const HeaderMenu = () => {
           transition: 'height 0.15s linear',
         }}
       >
-        <Link href="/" variant="header">
-          Home
-        </Link>
         <Link href="#features" variant="header">
           Features
+        </Link>
+        <Link
+          href="https://chrome.google.com/webstore/detail/jajikjbellknnfcomfjjinfjokihcfoi"
+          variant="header"
+          target="_blank"
+        >
+          Adblocker
         </Link>
         <Link href="mailto:contact@1vpn.org" variant="header">
           Contact
