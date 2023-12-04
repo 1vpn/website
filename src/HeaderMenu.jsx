@@ -53,7 +53,7 @@ const HeaderMenu = () => {
         <Link
           href={
             navigator.userAgent.indexOf('Firefox') !== -1
-              ? 'https://addons.mozilla.org/en-US/firefox/addon/1vpn-free-vpn-for-firefox/'
+              ? 'https://addons.mozilla.org/en-US/firefox/addon/1vpn/'
               : navigator.userAgent.indexOf('Edg') !== -1
               ? 'https://microsoftedge.microsoft.com/addons/detail/dalhgafbhpdolibignjckpmiejgfddjp'
               : 'https://chrome.google.com/webstore/detail/akcocjjpkmlniicdeemdceeajlmoabhg'

@@ -63,9 +63,7 @@ const HomeSection = () => {
           <HomeButton
             browserName={'Firefox'}
             logo={firefox}
-            url={
-              'https://addons.mozilla.org/en-US/firefox/addon/1vpn-free-vpn-for-firefox/'
-            }
+            url={'https://addons.mozilla.org/en-US/firefox/addon/1vpn/'}
           />
         </Flex>
         <Box
