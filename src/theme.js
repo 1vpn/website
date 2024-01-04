@@ -23,6 +23,10 @@ export const theme = {
       borderBottom: ['1px solid', 'none', 'none', 'none'],
       borderColor: ['lightBlue', 'none', 'none', 'none'],
     },
+    footer: {
+      color: 'text',
+      textDecoration: 'none',
+    },
     button: {
       display: 'flex',
       minHeight: ['40px', '48px', '48px', '48px'],
